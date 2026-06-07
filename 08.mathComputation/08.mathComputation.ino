@@ -1,5 +1,5 @@
 /*
-  Author: 
+  Author:
 
   Learning Intention:
   The students will learn basic math and arithmetic operations in C++
@@ -10,7 +10,7 @@
     3.  I know how to access more information in the documentation about math and arithmetic
     4.  I can access the order of operations documentation and use parenthesis to control
         the order of operations
-    5.  I understand short-hand incrementation and decrementation 
+    5.  I understand shorthand increment and decrement operations
     6.  I can seed and generate a random number
     7.  I can map an analogue value on a range of 0-1023 to a PWM value on a range of 0-255
 
@@ -22,7 +22,7 @@
     / (division)
     = (assignment operator)
 
-  Documentation: 
+  Documentation:
     https://www.arduino.cc/reference/en/#structure
     https://en.cppreference.com/w/cpp/language/operator_precedence
     https://www.arduino.cc/reference/en/language/functions/random-numbers/random/
@@ -35,7 +35,7 @@
 
 
 void setup() {
-  
+
 }
 
 void loop() {

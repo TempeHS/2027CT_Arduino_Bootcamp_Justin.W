@@ -1,5 +1,5 @@
-# TempeHS Ardunio Bootcamp
-This is the folder structure and core files for students to participate in the TempeHS Ardunio Bootcamp
+# TempeHS Arduino Bootcamp
+This is the folder structure and core files for students to participate in the TempeHS Arduino Bootcamp
 
 ## Before you begin:
   1. Install [Arduino IDE for Windows](https://drive.google.com/file/d/1ha-3JTMwprRaKoNczq-eIYs7LrxqR_wl/view?usp=drive_link) or [Arduino IDE for MAC](https://drive.google.com/file/d/1hbWTW9vQ1C1OLoO4T3Ryvpsaqmj3jIQ2/view?usp=drive_link)

@@ -1,12 +1,12 @@
 /*
-  Author: 
+  Author:
 
   Learning Intention:
   The students will learn to break their code into reusable chunks called functions
-  
+
   Success Criteria:
     1. I understand how a function is called
-    2. I can break a simple program like LED blick into functions that I can be re-use
+    2. I can break a simple program like LED blink into functions that I can re-use
     3. I know the computation term 'abstraction.'
     4. I can create separate my functions into functions.ino files to make my code more manageable
     5. I can return values from a function and use the value in my code
@@ -14,12 +14,12 @@
     7. I know the computation term encapsulation
 
   Student Notes:
-    
-  Documentation: 
+
+  Documentation:
     https://www.youtube.com/watch?v=mHa1mUd1Kmg
 
   Schematic:
-      
+
 */
 
 int LED_PIN = 13;
@@ -29,8 +29,8 @@ int randomNum09;
 void setup() {
   // initialize digital pin with built in LED as output.
   pinMode(LED_PIN, OUTPUT);
-  // inititise the serial monitor for debugging and output
-  Serial.begin(9600); 
+  // initialize the serial monitor for debugging and output
+  Serial.begin(9600);
   randomSeed(analogRead(0));
 }
 
@@ -48,12 +48,12 @@ void loop() {
 
 // A function that waits for a second (1000 milliseconds)
 void MyDelayFunction() {
-  delay(1000); 
+  delay(1000);
 }
 
-// A Function that toggles a bool value true to false or false to true 
+// A Function that toggles a bool value true to false or false to true
 void TogglePin() {
-  LED_PIN_State = !LED_PIN_State; 
+  LED_PIN_State = !LED_PIN_State;
 }
 
 void DebugLED() {

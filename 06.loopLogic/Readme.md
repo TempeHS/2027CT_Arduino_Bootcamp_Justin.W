@@ -27,7 +27,7 @@
         x = x + 1;
     }
 *Notes:*
-- *If no logic (i.e. an incrementor or a decrementor) is established to escape the loop it will repeat endlessly.*
+- *If no logic (i.e. an incrementer or a decrementer) is established to escape the loop it will repeat endlessly.*
 
 ## DO WHILE Statement (Post-test Loop)
 ![DO WHILE Statement](https://github.com/TempeHS/Ardunio_Bootcamp_Source/blob/main/06.loopLogic/do_while_statement.drawio.png)
@@ -39,5 +39,5 @@
     } while (x < 200);
 *Notes:*
 - *As the flowchart shows the code will run once before testing the binary logic.*
-- *If no logic (i.e. an incrementor or a decrementor) is established to escape the loop it will repeat endlessly.*
+- *If no logic (i.e. an incrementer or a decrementer) is established to escape the loop it will repeat endlessly.*
 

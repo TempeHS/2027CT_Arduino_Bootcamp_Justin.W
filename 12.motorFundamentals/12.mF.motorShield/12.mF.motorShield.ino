@@ -1,5 +1,5 @@
 /*
-  Author: 
+  Author:
   Learning Intention:
   The students will learn how to wire two motors to an H-Bridge controller and
   control the motor's speed and direction.
@@ -11,9 +11,9 @@
     3.  I understand the advantages and disadvantages of a continuous servo over a motor and H bridge
     4.  Understand the importance of only connecting an external battery when the Arduino is disconnected from the computer
 
-  Student Notes: 
+  Student Notes:
 
-  Documentation: 
+  Documentation:
     https://docs.arduino.cc/tutorials/motor-shield-rev3/msr3-controlling-dc-motor
 
   Schematic:
@@ -44,7 +44,7 @@ void loop() {
   //change direction every loop
   directionState = !directionState;
   digitalWrite(leftDirectionPin, directionState);
-  digitalWrite(rightDirectionPin, directionState); //if motors are wired oposing make !directionState
+  digitalWrite(rightDirectionPin, directionState); //if motors are wired opposing make !directionState
 
   //release breaks
   digitalWrite(leftBrakePin, LOW);

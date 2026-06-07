@@ -1,0 +1,13 @@
+{
+  "name": "TempeHS Arduino Bootcamp",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yusifaliyevpro.vscicons",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-british-english"
+      ]
+    }
+  }
+}
