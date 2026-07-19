@@ -74,7 +74,7 @@ Use these defaults unless an activity says otherwise:
 - Line sensor: digital D2-D8.
 - Ultrasonic sensor: digital pins only.
 - Servo signal: PWM pins D3, D5, D6, D9, D10, D11.
-- Serial baud: 9600.
+- Serial baud: 115200.
 
 If upload fails, check board and CP210x port before changing code.
 
@@ -208,13 +208,13 @@ Use Teacher Mode when asked to review progress.
 
 ### Project Rubric Checks (0.1-0.3)
 
-1. [00.myProjects/0.1.lightSwitch/0.1.lightSwitch.ino](00.myProjects/0.1.lightSwitch/0.1.lightSwitch.ino)
+1. [11.myProjects/11.1.lightSwitch/11.1.lightSwitch.ino](11.myProjects/11.1.lightSwitch/11.1.lightSwitch.ino)
    - Sensor input drives LED UI.
    - Includes non-trivial interaction logic.
-2. [00.myProjects/0.2.fridgeMonitor/0.2.fridgeMonitor.ino](00.myProjects/0.2.fridgeMonitor/0.2.fridgeMonitor.ino)
+2. [11.myProjects/11.2.fridgeMonitor/11.2.fridgeMonitor.ino](11.myProjects/11.2.fridgeMonitor/11.2.fridgeMonitor.ino)
    - Uses multiple states or inputs.
    - Monitoring logic drives visual/audio feedback.
-3. [00.myProjects/0.3.boomGate/0.3.boomGate.ino](00.myProjects/0.3.boomGate/0.3.boomGate.ino)
+3. [11.myProjects/11.3.boomGate/11.3.boomGate.ino](11.myProjects/11.3.boomGate/11.3.boomGate.ino)
    - Ultrasonic controls servo gate behavior.
    - Threshold logic is stable and clear.
 
