@@ -37,10 +37,5 @@ void setup() {
 
 void loop() {
   delay(1000);  // Wait 1 second each cycle
-  Serial.println("DFM MEIY");
-}
-
-void loop() {
-  delay(1000);  // Wait 1 second each cycle
-  Serial.println("DFM MEIY");
+  Serial.println("DFM MEIY GOAT");
 }
