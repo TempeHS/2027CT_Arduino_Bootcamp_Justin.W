@@ -43,6 +43,9 @@ int ledState = LOW;
 
 void setup() {
   Serial.begin(115200);
+  pinMode(BUTTON_PIN, INPUT);
+  pinMode(BUTTON_PIN, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
 
   Serial.println("Counting up:");
   for (int i = 0; i < 10; i++) {
@@ -52,10 +55,13 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(LED_PIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_PIN, LOW);
-  delay(1000);
+  unsigned long now = millis();
+
+  if (now - previousBlink >= INTERVAL) {
+    previousBlink = now;
+    ledState = !ledState;            // flip HIGH to LOW and back
+    digitalWrite(LED_PIN, ledState);
+  }
 
   if (digitalRead(BUTTON_PIN) == HIGH) {
     Serial.println("Button pressed!");
