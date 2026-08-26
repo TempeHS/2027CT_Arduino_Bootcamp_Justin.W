@@ -35,16 +35,53 @@
     https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm
 */
 
+
 #include "Ultrasonic.h"
 
-Ultrasonic ultrasonic(2);   // Grove 3-pin sensor: trigger and echo share D2
+Ultrasonic ultrasonic(2);   // sensor on D2
+
+const int BUZZER_PIN = 5;   // use D5 (Uno valid)
+const int LED_PIN    = 6;   // use D6 (Uno valid)
 
 void setup() {
   Serial.begin(115200);
+  pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
+}
+
+int classifyZone(int distance, int nearLimit, int farLimit) {
+  if (distance < nearLimit) return 0;
+  if (distance < farLimit)  return 1;
+  return 2;
+}
+
+int readDistance() {
+  return (int)ultrasonic.read();
+}
+
+void showAlert(int zone) {
+  if (zone == 0) {                 // danger
+    digitalWrite(LED_PIN, HIGH);
+    digitalWrite(BUZZER_PIN, HIGH);
+  } else if (zone == 1) {          // warning
+    digitalWrite(LED_PIN, HIGH);
+    digitalWrite(BUZZER_PIN, LOW);
+  } else {                         // safe
+    digitalWrite(LED_PIN, LOW);
+    digitalWrite(BUZZER_PIN, LOW);
+  }
+}
+
+void logStatus(int distance, int zone) {
+  Serial.print(distance);
+  Serial.print(" cm, zone ");
+  Serial.println(zone);
 }
 
 void loop() {
-  int distance = ultrasonic.read();   // distance in cm
-  Serial.println(distance);
+  int distance = readDistance();
+  int zone = classifyZone(distance, 10, 30);
+  showAlert(zone);
+  logStatus(distance, zone);
   delay(100);
 }
