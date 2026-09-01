@@ -38,6 +38,6 @@ void setup() {
 // The setup function loops when you press reset or power the board
 void loop() {
   delay(1000);  // Wait 1 second each cycle
-  Serial.println("DFM MEIY");
-  Serial.println("GOAT");
+  Serial.println("HELLO");
+  Serial.println("WORLD");
 }

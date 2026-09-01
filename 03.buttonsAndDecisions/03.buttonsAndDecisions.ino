@@ -51,15 +51,6 @@ void loop() {
   Serial.print("Reading: ");
   Serial.println(reading);
 
-  if (reading > 80) {
-    Serial.println("  VERY HIGH");
-  } else if (reading > 50) {
-    Serial.println("  HIGH");
-  } else if (reading > 20) {
-    Serial.println("  MEDIUM");
-  } else {
-    Serial.println("  LOW");
-  }
   int zone = reading / 25;    // whole-number division: gives 0, 1, 2 or 3
 
   switch (zone) {
